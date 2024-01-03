@@ -1,0 +1,43 @@
+
+@charset 'UTF-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+*{margin: 0;
+padding: 0;
+border: 0;
+outline: none;
+box-sizing:border-box;}
+
+body{ background-color: black;overflow:hidden;}
+
+ul{list-style: none;}
+
+main .personagem{display: none; height:100vh;}
+
+main .personagem.selecionado{
+    display: block;
+}
+
+main .personagem .imagem{ width: 100%;height: 100%;object-fit: cover;}
+
+main::after {position: fixed;top: 0;left: 0;
+;min-height:100vh;width:80vw; 
+background: linear-gradient(-233deg, #000 40%, rgba(0,0,0,0)65%) no-repeat;}
+
+.conteudo{position: absolute; top: 0;left: 120px; display: flex; flex-direction:column; justify-content: center;min-height:100vh;max-width: 450px; z-index: 1;}
+
+ .conteudo .nome{font-family:  'Young Serif', serif;;font-size:49px ;color: white; margin-bottom: 10px;background-color:rgba(1, 1, 1, 0.411); padding: 7px;}
+
+ .conteudo .descricao{color: aliceblue;font-family:'Young Serif', serif;line-height: 27px;background-color:rgba(1, 1, 1, 0.548); padding: 20px;font-size: 23px;}
+
+ .conteudo .logo{background-image: url("../imagens/one-piece-logo.png"); height: 100px; width: 230px; background-size: cover; margin-bottom: 40px;}
+
+ .botoes{position:fixed;top: 0;right: 10px;display:flex;flex-direction: column;min-height: 100vh;width:180px;justify-content:center;align-items:center;gap: 25px;}
+
+ .botoes .botao{border: none;background:#000;cursor:pointer;border-radius: 50%;}
+
+ .botoes .botao img{border-radius: 50%; max-width:85px ;}
+
+ .botoes .botao.selecionado{transform: scale(1.5);
+box-shadow: 0 0 10px #d9d9d9;}
